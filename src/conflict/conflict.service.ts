@@ -22,7 +22,7 @@ export class ConflictService {
             for (let j = i + 1; j < surveyPassing.answers.length; j++) {
                 if (surveyPassing.answers[i].answer === surveyPassing.answers[j].answer) {
                     const conflict = new Conflict();
-                    conflict.reason = `Conflict: Answer to question "${surveyPassing.answers[i].question}" is the same as answer to question "${surveyPassing[j].question}" (answer: "${surveyPassing[j].answer}").`;
+                    conflict.reason = `Conflict: Answer to question "${surveyPassing.answers[i].question}" is the same as answer to question "${surveyPassing.answers[j].question}" (answer: "${surveyPassing.answers[j].answer}").`;
                     conflict.info = surveyPassing.id;
                     conflicts.push(conflict);
                 }
