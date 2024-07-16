@@ -1,5 +1,5 @@
 
-## Documentation
+# Documentation
 
 To check conflicts make
 POST /calculate
