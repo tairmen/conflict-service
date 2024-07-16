@@ -7,7 +7,7 @@ export class ConflictController {
   constructor(private readonly conflictService: ConflictService) {}
 
   @Post()
-  calculate(@Body() surveyPassing: SurveyPassingDto[]) {
+  calculate(@Body() surveyPassing: SurveyPassingDto) {
     return this.conflictService.calculateConflicts(surveyPassing);
   }
 }
